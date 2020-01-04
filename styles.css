@@ -1,0 +1,187 @@
+body {
+  animation-name: body_bg;
+  animation-iteration-count: infinite;
+  animation-duration: 5s;
+  animation-direction: alternate;
+  font-family: "Helvetica Neue", "Helvetica", sans-serif;
+  font-size: 1rem;
+  font-weight: 200;
+}
+
+/** {
+  box-sizing: border-box;
+}
+
+*::before {
+  box-sizing: border-box;
+}*/
+
+.burgeon {
+  background: black;
+  border: 2px solid black;
+  border-radius: 100%;
+  z-index: 999;
+  cursor: default;
+}
+.burgeon:hover {
+  animation-name: burgeon_hov;
+  animation-duration: 1.5s;
+  animation-direction: alternate;
+  animation-iteration-count: 2;
+}
+.burgeon_small {
+  background: white;
+  width: 10px;
+  height: 10px;
+  transition: 0.5s;
+}
+#main_burgeon {
+  position: fixed;
+  top: 86px;
+  right: 32px;
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+}
+#burgeon_2 {
+  position: fixed;
+  width: 0px;
+  height: 0px;
+  top: 154px;
+  right: 68px;
+  opacity: 0;
+}
+#burgeon_3 {
+  position: fixed;
+  width: 0px;
+  height: 0px;
+  top: 93px;
+  right: 100px;
+  opacity: 0;
+}
+
+#burgeon_4 {
+  position: fixed;
+  width: 0px;
+  height: 0px;
+  top: 35px;
+  right: 67px;
+  opacity: 0;
+}
+
+#burgeon_5 {
+  position: fixed;
+  width: 0px;
+  height: 0px;
+  top: 21px;
+  right: 118px;
+  opacity: 0;
+}
+
+#burgeon_6 {
+  position: fixed;
+  width: 0px;
+  height: 0px;
+  top: 165px;
+  right: 119px;
+  opacity: 0;
+}
+
+#line1svg {
+  position: fixed;
+  top: 106px;
+  right: 50px;
+  width: 25px;
+  height: 50px;
+}
+
+#line2svg {
+  position: fixed;
+  top: 163px;
+  right: 80px;
+  width: 40px;
+  height: 10px;
+}
+
+#line3svg {
+  position: fixed;
+  top: 103px;
+  right: 65px;
+  width: 35px;
+  height: 50px;
+}
+
+#line4svg {
+  position: fixed;
+  top: 47px;
+  right: 52px;
+  width: 20px;
+  height: 40px;
+}
+
+#line5svg {
+  position: fixed;
+  top: 30px;
+  right: 79px;
+  width: 40px;
+  height: 10px;
+}
+
+.menu_caption {
+
+  position: fixed;
+  opacity: 0;
+  transition: 1s;
+}
+
+#login {
+
+  top: 18px;
+  right: 135px;
+
+}
+
+#contact {
+
+  top: 162px;
+  right: 137px;
+
+}
+
+#about {
+
+  top: 92px;
+  right: 125px;
+
+}
+
+
+/* ?zebrac potem wszystkie line w klasę? */
+
+.menu_branches {
+  stroke: #000000;
+  stroke-width: 2px;
+  opacity: 0;
+  transition: 3s;
+}
+
+/*@keyframes body_bg {
+  0% {
+    background-image: linear-gradient(45deg, #ffffff, #eeffff, #ccffff);
+  }
+  100% {
+    background-image: linear-gradient(45deg, #ccffff, #eeffff, #ffffff);
+  }
+}
+
+@keyframes burgeon_hov {
+  0% {
+
+  }
+
+  100% {
+    background-color: #ccffff;
+    border-color: #ccffff;
+  }
+}
+*/
