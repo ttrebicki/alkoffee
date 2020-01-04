@@ -8,13 +8,9 @@ body {
   font-weight: 200;
 }
 
-/** {
-  box-sizing: border-box;
+.burgeon, .menu_branches, .menu_caption {
+  box-sizing: content-box !important;
 }
-
-*::before {
-  box-sizing: border-box;
-}*/
 
 .burgeon {
   background: black;
@@ -87,6 +83,12 @@ body {
   opacity: 0;
 }
 
+#line1svg, #line2svg, #line3svg, #line4svg, #line5svg {
+
+  z-index: 999;
+
+}
+
 #line1svg {
   position: fixed;
   top: 106px;
@@ -132,6 +134,8 @@ body {
   position: fixed;
   opacity: 0;
   transition: 1s;
+  z-index: 999;
+
 }
 
 #login {
@@ -163,6 +167,7 @@ body {
   stroke-width: 2px;
   opacity: 0;
   transition: 3s;
+  z-index: 999;
 }
 
 /*@keyframes body_bg {
