@@ -8,6 +8,24 @@ body {
   font-weight: 200;
 }
 
+h1 {
+  font-weight: 100 !important;
+}
+
+h2 {
+  font-weight: 300 !important;
+}
+
+.container {
+  max-width: 800px !important;
+}
+
+/* usunac
+img {
+  opacity: 0.5;
+  filter: grayscale(1);
+}
+*/
 .burgeon, .menu_branches, .menu_caption {
   box-sizing: content-box !important;
 }
