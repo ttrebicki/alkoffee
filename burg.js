@@ -1,5 +1,6 @@
 function burg() {
 
+  let lineZero = document.getElementById("line0");
   let lineOne = document.getElementById("line1");
   let lineTwo = document.getElementById("line2");
   let lineThree = document.getElementById("line3");
@@ -13,6 +14,56 @@ function burg() {
   let burgeonSix = document.getElementById("burgeon_6");
 
   let menuCaptions = document.getElementsByClassName("menu_caption");
+
+/* galaz 0 */
+
+if (lineZero.getAttribute("x2") == 0) {
+
+  let lineX = 0;
+
+  let anim = setInterval(frame, 10);
+
+ function frame() {
+
+   if (lineX == 50) {
+
+     clearInterval(anim);
+
+   }
+
+   else {
+
+     lineX++;
+     lineZero.setAttribute("x2", lineX);
+
+   }
+ }
+}
+
+else {
+
+ let lineX = 50;
+ let anim = setInterval(frame, 2);
+
+ function frame() {
+
+   if (lineX == 0) {
+
+     clearInterval(anim);
+
+   }
+
+   else {
+
+     lineX--;
+     lineZero.setAttribute("x2", lineX);
+
+     }
+   }
+ }
+
+
+/* galaz 0 - KONIEC */
 
 /* pierwsza galaz A - line1 - START */
 
@@ -79,7 +130,7 @@ function burg() {
 
      let lineX = 40;
      let lineY = 0;
-     let anim = setInterval(frame, 40);
+     let anim = setInterval(frame, 80);
 
     function frame() {
 
@@ -137,7 +188,7 @@ function burg() {
    if (lineThree.getAttribute("x2") == 35) {
 
      let lineX = 35;
-     let anim = setInterval(frame, 2);
+     let anim = setInterval(frame, 20);
 
     function frame() {
 
@@ -245,7 +296,7 @@ if (lineFive.getAttribute("x2") == 40 && lineFive.getAttribute("y2") == 10) {
 
   let lineX = 40;
   let lineY = 10;
-  let anim = setInterval(frame, 10);
+  let anim = setInterval(frame, 80);
 
  function frame() {
 

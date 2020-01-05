@@ -29,7 +29,7 @@ body {
   background: white;
   width: 10px;
   height: 10px;
-  transition: 0.5s;
+  transition: 1s;
 }
 #main_burgeon {
   position: fixed;
@@ -67,8 +67,6 @@ body {
 
 #burgeon_5 {
   position: fixed;
-  width: 0px;
-  height: 0px;
   top: 21px;
   right: 118px;
   opacity: 0;
@@ -76,18 +74,30 @@ body {
 
 #burgeon_6 {
   position: fixed;
-  width: 0px;
-  height: 0px;
   top: 165px;
   right: 119px;
   opacity: 0;
 }
 
-#line1svg, #line2svg, #line3svg, #line4svg, #line5svg {
+#line0svg, #line1svg, #line2svg, #line3svg, #line4svg, #line5svg {
 
   z-index: 999;
 
 }
+
+#line0svg {
+  position: fixed;
+  top: 103px;
+  right: 0px;
+  width: 35px;
+  height: 50px;
+}
+
+#line0 {
+  opacity: 1;
+  stroke-width: 2px;
+}
+
 
 #line1svg {
   position: fixed;
@@ -164,7 +174,7 @@ body {
 
 .menu_branches {
   stroke: #000000;
-  stroke-width: 1px;
+  stroke-width: 2px;
   opacity: 0;
   transition: 3s;
   z-index: 999;
