@@ -9,11 +9,12 @@ body {
 }
 
 h1 {
-  font-weight: 100 !important;
+  font-weight: 300 !important;
 }
 
 h2 {
-  font-weight: 300 !important;
+  font-weight: 100 !important;
+
 }
 
 .container {
@@ -215,6 +216,18 @@ img {
   transition: 3s;
   z-index: 999;
 }
+
+.hamburger {
+  width: 11px;
+  height: 2px;
+  background-color: white;
+  margin: 6px auto;
+  border-radius: 50%;
+  opacity: 0.5;
+  display: none;
+}
+
+
 
 /*@keyframes body_bg {
   0% {
