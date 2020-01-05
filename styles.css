@@ -217,16 +217,14 @@ img {
   z-index: 999;
 }
 
-.hamburger {
-  width: 11px;
-  height: 2px;
-  background-color: white;
-  margin: 6px auto;
-  border-radius: 50%;
-  opacity: 0.5;
-  display: none;
+#menu_logo {
+  border-radius: 100%;
 }
 
+#menu_logo:hover {
+  opacity: 0;
+  transition: 1s;
+}
 
 
 /*@keyframes body_bg {
