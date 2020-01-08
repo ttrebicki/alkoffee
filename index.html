@@ -2,7 +2,7 @@
 <!DOCTYPE html> <html> <head>
   <link rel="stylesheet" type="text/css" href="styles.css">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
-  <script type="text/javascript" src="burg.js"></script>
+  <script type="text/javascript" src="burg_opt.js"></script>
 </head>
 
   <body>
@@ -10,19 +10,17 @@
     <svg id="line0svg"> <line class="menu_branches" id="line0" x1="0" x2="0"
     y1="0" y2="0"/> </svg>
 
-    <div onclick="burg()" class="burgeon" id="main_burgeon">
+    <div class="burgeon" id="main_burgeon">
 
-      <img id="menu_logo" src="logo.jpg" width="100%">
+      <img onclick="burg()" id="menu_logo" src="logo.jpg" width="100%">
 
     </div>
 
-    <svg id="line1svg"> <line class="menu_branches" id="line1" x1="25" x2="25"
-    y1="0" y2="0"/> </svg>
+    <svg id="line1svg"> <line class="menu_branches" id="line1"/> </svg>
 
     <div class="burgeon burgeon_small" id="burgeon_2"> </div>
 
-    <svg id="line2svg"> <line class="menu_branches" id="line2" x1="40" x2="40"
-    y1="0" y2="0"/> </svg>
+    <svg id="line2svg"> <line class="menu_branches" id="line2"/> </svg>
 
     <div class="burgeon burgeon_small" id="burgeon_3"> </div>
 
@@ -47,27 +45,37 @@
 
     <div class="container">
 
-      <div class="row justify-content-md-center">
+      <svg id="pathway" width="100vw" height="100vh">
+
+        <path d="M300 300 L300 400 C200 200" stroke-width="3">
+
+       </svg>
+
+      <p id="test" style="display: none"></p>
+
+      <div class="row justify-content-md-center" style="border-bottom: 1px solid black;">
         <div class="col col-sm-12 col-md-6 col-lg-6">
           <h1>zefir</h1>
-          <h2>ekologiczny proszek<br> do czyszczenia ekspresu</h2>
+          <h2 id="test2">ekologiczny proszek<br> do czyszczenia ekspresu</h2>
 
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut id risus vel magna accumsan faucibus elementum a orci. Etiam condimentum, enim quis efficitur rutrum, sem leo suscipit sem, tincidunt egestas leo orci id sapien. Donec gravida massa sit amet porttitor aliquet. Aliquam facilisis vulputate risus ut interdum. Aliquam congue, ex nec volutpat congue, dolor magna pharetra est, vel lobortis nisi purus eget ante. Mauris aliquam lobortis eros id bibendum. Mauris pharetra enim sit amet aliquam condimentum. Nullam iaculis, dolor ut luctus egestas, massa diam tristique nisl, sit amet semper nisi ligula et ipsum. Donec pharetra convallis neque in lacinia. Duis venenatis suscipit augue, ut rhoncus leo mollis sit amet. Donec quis urna ac metus aliquam pharetra. Phasellus ultrices vel metus ac suscipit. Sed auctor nulla eu molestie luctus. In semper, nibh lobortis ultricies venenatis, risus augue lobortis nibh, id porta nulla ligula eget ligula.</p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut id risus vel magna accumsan faucibus elementum a orci. Etiam condimentum, enim quis efficitur rutrum, sem leo suscipit sem, tincidunt egestas leo orci id sapien. Donec gravida massa sit amet porttitor aliquet. Aliquam facilisis vulputate risus ut interdum. Aliquam congue, ex nec volutpat congue, dolor magna pharetra est, vel lobortis nisi purus eget ante. Mauris aliquam lobortis eros id bibendum. </p>
         </div>
-        <div class="col col-sm-12 col-md-6 col-lg-6"><h1>&nbsp;</h1><img class="img-responsive" src="mockup_1.jpg"></div>
+        <div class="col col-sm-12 col-md-6 col-lg-6"><img class="img-responsive" src="mockup_1.jpg">
+        </div>
       </div>
 
-      <div class="row justify-content-md-center">
+      <div class="row justify-content-md-center" style="border-bottom: 1px solid black;">
         <div class="col col-sm-12 col-md-6 col-lg-6">
           <h1>zefir</h1>
           <h2>ekologiczny proszek<br> do czyszczenia ekspresu</h2>
 
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut id risus vel magna accumsan faucibus elementum a orci. Etiam condimentum, enim quis efficitur rutrum, sem leo suscipit sem, tincidunt egestas leo orci id sapien. Donec gravida massa sit amet porttitor aliquet. Aliquam facilisis vulputate risus ut interdum. Aliquam congue, ex nec volutpat congue, dolor magna pharetra est, vel lobortis nisi purus eget ante. Mauris aliquam lobortis eros id bibendum. Mauris pharetra enim sit amet aliquam condimentum. Nullam iaculis, dolor ut luctus egestas, massa diam tristique nisl, sit amet semper nisi ligula et ipsum. Donec pharetra convallis neque in lacinia. Duis venenatis suscipit augue, ut rhoncus leo mollis sit amet. Donec quis urna ac metus aliquam pharetra. Phasellus ultrices vel metus ac suscipit. Sed auctor nulla eu molestie luctus. In semper, nibh lobortis ultricies venenatis, risus augue lobortis nibh, id porta nulla ligula eget ligula.</p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut id risus vel magna accumsan faucibus elementum a orci. Etiam condimentum, enim quis efficitur rutrum, sem leo suscipit sem, tincidunt egestas leo orci id sapien. Donec gravida massa sit amet porttitor aliquet. Aliquam facilisis vulputate risus ut interdum. Aliquam congue, ex nec volutpat congue, dolor magna pharetra est, vel lobortis nisi purus eget ante. Mauris aliquam lobortis eros id bibendum. </p>
         </div>
-        <div class="col col-sm-12 col-md-6 col-lg-6"><h1>&nbsp;</h1><img class="img-responsive" src="mockup_1.jpg"></div>
+        <div class="col col-sm-12 col-md-6 col-lg-6"><img class="img-responsive" src="mockup_1.jpg"></div>
       </div>
 
     </div>
 
+<div id="storage"></div>
 
   </body> </html>

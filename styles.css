@@ -1,3 +1,7 @@
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   animation-name: body_bg;
   animation-iteration-count: infinite;
@@ -31,12 +35,11 @@ a:hover {
   transition: 1s;
 }
 
-/* usunac
+
 img {
-  opacity: 0.5;
-  filter: grayscale(1);
+  padding: 15px 0px;
 }
-*/
+
 .burgeon, .menu_branches, .menu_caption {
   box-sizing: content-box !important;
 }
@@ -206,19 +209,17 @@ img {
 
 }
 
-
-/* ?zebrac potem wszystkie line w klasę? */
-
 .menu_branches {
   stroke: #000000;
   stroke-width: 1px;
   opacity: 0;
-  transition: 3s;
   z-index: 999;
+  transition: 1.5s;
 }
 
 #menu_logo {
   border-radius: 100%;
+  padding: 0px;
 }
 
 #menu_logo:hover {
@@ -226,6 +227,9 @@ img {
   transition: 1s;
 }
 
+#pathway {
+  position: fixed;
+}
 
 /*@keyframes body_bg {
   0% {
