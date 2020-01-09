@@ -8,33 +8,57 @@
 
 #svgone {
   position: absolute;
-  animation-name: svgani;
+  animation-name: svgani2;
   animation-duration: 5s;
   animation-iteration-count: infinite;
-  animation-direction: alternate;
+  animation-direction: normal;
   width: 100vw;
   left: 0px;
 }
 
 #moje {
-  animation-name: svgani;
+  animation-name: svgani2;
   animation-duration: 2;
   animation-iteration-count: infinite;
-  animation-direction: alternate;
+  animation-direction: normal;
 }
 
 #svgone2 {
 
   position: absolute;
-  animation-name: svgani;
-  animation-duration: 4s;
+  animation-name: svgani2;
+  animation-duration: 5s;
   animation-iteration-count: infinite;
-  animation-direction: alternate-reverse;
+  animation-direction: normal;
   width: 90vw;
   right: 0px;
 }
 
  @keyframes svgani {
+
+   0% {
+     fill: #fc9;
+     opacity: 0.5
+   }
+   25% {
+     transform: rotate3d(30, 0, 0, 180deg);
+   }
+   50% {
+     fill: #000;
+     opacity: 1;
+     transform: rotate3d(0, 10, 180, 180deg);
+   }
+
+   75% {
+     transform: rotate3d(0, 180, 0, 180deg);
+   }
+
+   100% {
+     transform: rotate3d(180, 180, 0, 180deg);
+   }
+ }
+
+ @keyframes svgani2 {
 
    0% {
      fill: #fc9;
@@ -50,10 +74,10 @@
  }
 
  #somepath {
-   animation-name: svgani;
+   animation-name: svgani2;
    animation-duration: 5s;
    animation-iteration-count: infinite;
-   animation-direction: alternate;
+   animation-direction: normal;
 
 
  }
